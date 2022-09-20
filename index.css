@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+}
+
+#open {
+  background-color: teal;
+  color: white;
+  border: 0;
+  border-radius: 2px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.modal-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0px;
+  left: 380px;
+  height: 100vh;
+  width: 100vh;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.modal-container.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal {
+  background-color: white;
+  max-width: 100%;
+  width: 600px;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+#close {
+  background-color: teal;
+  color: white;
+  border: 0;
+  border-radius: 2px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
